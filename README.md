@@ -13,4 +13,4 @@ Work in Progress:
 
 # Weather Forecast Snapshot
 
-![Weather Forecast](/images/weather-dashboard.png)
+![Weather Forecast](images/weather-dashboard.PNG)
