@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="row">
+        <div class="col-md-3">
+            <label style="color: white; padding-right: 5px;">Select Location</label>
+            <select id="location" [(ngModel)] = "location" (change)="onLocationChange($event)">
+                <option vlaue="Bangalore">Bangalore</option>
+                <option vlaue="Hyderabad">Hyderabad</option>
+                <option vlaue="Chennai">Chennai</option>
+                <option vlaue="Delhi">Delhi</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <h3 style="color: white">{{ location }}, India</h3>
+            <hr>
+            <div class="row">
+                <div *ngFor="let weather of weatherDetails">
+                    <app-weather-forecast [weather] = 'weather'></app-weather-forecast>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

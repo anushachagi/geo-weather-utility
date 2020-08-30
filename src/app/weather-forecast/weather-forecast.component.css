@@ -1,0 +1,16 @@
+.block {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #2189ce;
+
+}
+.weekday {
+    align-content: center;
+    width: 60px;
+    background-color: #2a425c;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px auto;
+}

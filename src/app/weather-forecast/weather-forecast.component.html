@@ -1,0 +1,11 @@
+<div class="col-md-2">
+    <div class="block">
+        <div class="weekday">{{ dayName }}</div>
+        <div class="date">{{ weather.datetimeStr | date: 'mediumDate'}}</div>
+        <div style = "text-align: center;"><fa-icon [icon]="faCloud" size="3x" 
+            primaryOpacity="0.1"
+            secondaryOpacity="0.9"
+            [styles]="{'stroke': 'black', 'color': cloudColor}"></fa-icon></div>
+        <div class="maxmin" style="color: white; text-align: center;">{{ +weather.mint | number:'1.0-0' }}°C | {{ +weather.maxt | number:'1.0-0' }}°C</div>
+    </div>
+</div>
